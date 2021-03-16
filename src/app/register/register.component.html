@@ -1,0 +1,27 @@
+<br>
+<br>
+<h1>Rejestracja</h1>
+<br>
+<br>
+<div id="registerContent_template">
+  <p>
+<b>*Nazwa:</b><br><br>
+<b>*Hasło:</b><br><br>
+<b>*E-Mail:</b><br><br>
+  </p>
+<br>
+<p><b>Wartości oznaczone * muszą zostać podane.</b></p>
+</div>
+
+<div id="registerContent_User">
+  <br>
+  <input type="text" #nickname [(ngModel)]="user.username">
+  <br><br>
+  <input type="password" #password [(ngModel)]="user.password">
+  <br><br>
+  <input type="email" #email [(ngModel)]="user.email">
+  <br><br>
+  <br><br>
+  <button type="button" (click)="register()"> <b>Zarejestruj</b> </button>
+  <br>
+</div>

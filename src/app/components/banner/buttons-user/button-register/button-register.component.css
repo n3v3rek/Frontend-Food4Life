@@ -1,0 +1,25 @@
+#buttonRegister
+{
+  font-size: 12px;
+  height: 44px;
+  padding: 3px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: auto;
+  float: top;
+  text-align: center;
+  background-color: black;
+  line-height: 3;
+}
+
+#buttonRegister:hover
+{
+  background-color: #808590;
+}
+
+.link
+{
+  text-decoration: none;
+  color: white;
+}

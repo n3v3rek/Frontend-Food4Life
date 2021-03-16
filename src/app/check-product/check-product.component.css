@@ -1,0 +1,65 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#showProductContent {
+  margin-left: 100px;
+}
+
+#selectButton {
+  background-color: black;
+  color: white;
+  border: black;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+#selectButton:hover {
+  background-color: #808590;
+}
+
+#selectorShowProduct {
+  margin-left: 66px;
+}
+
+
+.my-forms {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.forms-display {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 10px;
+}
+
+.my-button {
+  margin-left: 30px;
+  margin-top: 40px;
+  background: #333333;
+  color: white;
+  width: 160px;
+  height: 46px;
+  text-align: center;
+}
+
+.content-display {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.button-product{
+  float: right;
+  margin: 5px;
+  width: 120px;
+  color: black;
+  font-size: 16px;
+  background: white;
+}

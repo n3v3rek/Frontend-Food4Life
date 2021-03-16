@@ -1,0 +1,46 @@
+<br>
+<br>
+<h1>Sprawdzanie przepisów</h1>
+<br>
+<br>
+<div id="checkRecipeContent">
+  <div *ngIf="loaded">
+    <form [formGroup]="recipeForm">
+      <div class="forms-display">
+        <div class="form-group" style="margin-top: 40px">
+          <select class="form-control" formControlName="recipe" style="width: 1200px">
+            <option name="recipe" [ngValue]="null" disabled>Wybierz przepis</option>
+            <option *ngFor="let recipe of recipes" [ngValue]="recipe.recipeID"> {{recipe.name}}</option>
+          </select>
+        </div>
+        <button type="button" (click)="onSelected()" class="my-button">Zatwierdź</button>
+      </div>
+    </form>
+  </div>
+
+  <div *ngIf="isloaded">
+    <div class="content-display">
+      <h2>Dane przepisu:</h2>
+      <br>
+      <button type="button" class="button-product" (click)="removeRecipe()">
+        Usuń
+      </button>
+
+      <button type="button" class="button-product" (click)="addRecipe()">
+        Dodaj
+      </button>
+      <br/>
+      <p>Nazwa:<b id="data_1">{{selectedRecipe.name}}</b></p>
+      <p>Waga:<b id="data_2">{{selectedRecipe.weight}} g</b></p>
+      <p>Kilokalorie:<b id="data_3">{{selectedRecipe.kilocalorie}} kcal</b></p>
+      <p>Białka:<b id="data_4">{{selectedRecipe.protein}} g</b></p>
+      <p>Węglowodany:<b id="data_5">{{selectedRecipe.carbohydrates}} g</b></p>
+      <p>Tłuszcze:<b id="data_6">{{selectedRecipe.fats}} g</b></p>
+      <p>Treść:<b id="data_7">{{selectedRecipe.contentOfRecipe}}</b></p>
+      <p>Polubienia:<b id="data_8">{{selectedRecipe.likesCounter}}</b></p>
+      <p>Data dodania:<b id="data_9">{{selectedRecipe.creationDate}}</b></p>
+      <p>Opis:<b id="data_10">{{selectedRecipe.description}}</b></p>
+      <br>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+#buttonLogin
+{
+  font-size: 12px;
+  padding: 4px;
+  width: auto;
+  height: 44px;
+  margin-right: 5px;
+  margin-left: 5px;
+  float: top;
+  text-align: center;
+  background-color: black;
+  line-height: 3;
+}
+
+#buttonLogin:hover
+{
+  background-color: #808590;
+}
+
+.link
+{
+  text-decoration: none;
+  color: white;
+}

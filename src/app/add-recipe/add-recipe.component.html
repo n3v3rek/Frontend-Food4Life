@@ -1,0 +1,57 @@
+<br>
+<br>
+<h1>Dodawanie przepisu</h1>
+<br>
+<div id="addRecipeDiv">
+  <br>
+  <h2>Dodawanie nowego przepisu:</h2>
+  <br>
+  <div id="inputInfo">
+    <p>*Nazwa:</p>
+    <br>
+    <p>*Treść przepisu:</p>
+    <br>
+    <p>*Składniki:</p>
+    <br>
+    <p>*Waga [g]:</p>
+    <br>
+    <p>*Kilokalorie [kcal]:</p>
+    <br>
+    <p>*Białka [g]:</p>
+    <br>
+    <p>*Węglowodany [g]:</p>
+    <br>
+    <p>*Tłuszcze [g]:</p>
+    <br>
+    <p>Opis:</p>
+
+  </div>
+
+  <div id="inputData">
+
+    <input type="text"  [(ngModel)]="recipe.name"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.contentOfRecipe"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.ingredients"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.weight"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.kilocalorie"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.protein"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.carbohydrates"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.fats"><br>
+    <br>
+    <input type="text"  [(ngModel)]="recipe.description"><br>
+  </div>
+  <div id="buttonDiv">
+    <br>
+    <button id="submitButton" (click)="addNewRecipe()">Dodaj nowy przepis</button>
+    <br>
+    <br>
+    <p>Wartości oznaczone * muszą zostać podane.</p>
+  </div>
+</div>

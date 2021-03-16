@@ -1,0 +1,57 @@
+<br>
+<br>
+<h1>Dodawanie pomiaru</h1>
+<br>
+<div id="addMeasurementDiv">
+  <br>
+  <h2>Dodawanie nowego pomiaru:</h2>
+  <br>
+  <div id="inputInfo">
+    <p>*Waga [kg]:</p>
+    <br>
+    <p>*Wzrost [cm]:</p>
+    <br>
+    <p>*Biceps [cm]:</p>
+    <br>
+    <p>*Łydka [cm]:</p>
+    <br>
+    <p>*Klatka [cm]:</p>
+    <br>
+    <p>*Biodra [cm]:</p>
+    <br>
+    <p>*Udo [cm]:</p>
+    <br>
+    <p>*Talia [cm]:</p>
+    <br>
+    <p>Opis:</p>
+
+  </div>
+
+  <div id="inputData">
+
+    <input type="text"  [(ngModel)]="measurement.weight"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.growth"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.bicepsCircumference"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.calfCircumference"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.chestCircumference"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.hipSize"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.thighCircumference"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.waistSize"><br>
+    <br>
+    <input type="text"  [(ngModel)]="measurement.description"><br>
+  </div>
+  <div id="buttonDiv">
+    <br>
+    <button id="submitButton" (click)="addNewMeasurement()">Dodaj nowy pomiar</button>
+    <br>
+    <br>
+    <p>Wartości oznaczone * muszą zostać podane.</p>
+  </div>
+</div>

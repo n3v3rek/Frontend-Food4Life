@@ -1,0 +1,34 @@
+#iconView
+{
+  height: 100px;
+  width: 150px;
+  float: right;
+  background-color: black;
+}
+
+p{
+  margin-left: 35px;
+  font-size: 12px;
+}
+
+#iconView:hover
+{
+  background-color: #808590;
+}
+
+.link
+{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+#iconDiv{
+  text-align: center;
+  margin-right: 35px;
+  line-height: 3;
+}
+
+.visible{
+  display: none;
+}

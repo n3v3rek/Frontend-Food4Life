@@ -1,0 +1,83 @@
+h1
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+p
+{
+  margin-left: 100px;
+}
+
+#input_demand_1
+{
+  margin-left: 168px;
+}
+#input_demand_2
+{
+  margin-left: 126px;
+}
+#input_demand_3
+{
+  margin-left: 116px;
+}
+#input_demand_4
+{
+  margin-left: 130px;
+}
+#input_demand_5
+{
+  margin-left: 111px;
+}
+#input_demand_6
+{
+  margin-left: 60px;
+}
+#calculateButton
+{
+  margin-left: 150px;
+  color: white;
+  background-color: black;
+  border: black;
+  padding: 10px;
+}
+
+#calculateButton:hover
+{
+  background-color: #808590;
+}
+
+#demandHeader_1
+{
+  margin-left: 100px;
+}
+
+#demandHeader_2
+{
+  margin-left: 100px;
+}
+#calculateContent_infoForUser
+{
+  margin-right: 400px;
+  float: right;
+}
+#calculateContent_User
+{
+  clear: both;
+  margin-left: 200px;
+  float: left;
+}
+
+.my-button-save{
+  font-size: 16px;
+  background: black;
+  color: white;
+  width: 220px;
+  font-weight: 400;
+  height: 42px;
+  margin-left: 100px;
+}
+
+#inputInfo{
+  margin-left: 100px;
+}

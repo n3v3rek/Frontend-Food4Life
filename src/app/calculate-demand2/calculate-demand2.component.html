@@ -1,0 +1,59 @@
+<br>
+<br>
+<h1>Obliczanie zapotrzebowania</h1>
+<br>
+<br>
+
+<div>
+
+  <div id="calculateContent_User">
+    <h2 id="demandHeader_1">Dane użytkownika:</h2>
+    <br>
+    <p><b>Płeć:</b>
+    <select type="string" #demand_1 id="input_demand_1">
+      <option value="1" selected>Kobieta</option>
+      <option value="2">Mężczyzna</option>
+    </select>
+    <p><b>Wiek [lata]:</b>
+      <input id="input_demand_2" type="number" #age></p>
+    <p><b>Wzrost [cm]:</b>
+      <input id="input_demand_3" type="number" #height></p>
+    <p><b>Waga [kg]:</b>
+      <input id="input_demand_4" type="number" #weight></p>
+    <p><b>Rodzaj diety:</b>
+      <select id="input_demand_5" #demand_5>
+        <option selected value="1">Chudnięcie</option>
+        <option value="2">Utrzymanie wagi</option>
+        <option value="3">Zwiększenie wagi</option>
+      </select>
+    <p><b>Aktywność ruchowa:</b>
+    <select id="input_demand_6" #demand_6>
+      <option selected value="1">Brak</option>
+      <option value="2">Niska</option>
+      <option value="3">Średnia</option>
+      <option value="4">Duża</option>
+      <option value="5">Intensywna</option>
+    </select>
+    <br> <br> <br>
+    <button (click)="calculateDemand(demand_1.value, age.value, weight.value, height.value,demand_5.value , demand_6.value)" id="calculateButton"><b>Oblicz zapotrzebowanie organizmu</b>
+    </button> <br>
+    <p></p>
+  </div>
+
+  <div id="calculateContent_infoForUser">
+    <h2 id="demandHeader_2">Obliczone zapotrzebowanie:</h2>
+    <br>
+    <p><b>Zapotrzebowanie na kilokalorie: {{kilocalorie | number: '1.1-2' }} kcal</b></p>
+    <p><b>Zapotrzebowanie na białko: {{proteins | number: '1.1-2'}} g</b></p>
+    <p><b>Zapotrzebowanie na węglowodany: {{carbohydrates | number: '1.1-2'}} g</b></p>
+    <p><b>Zapotrzebowanie na tłuszcze: {{fats | number: '1.1-2'}} g</b></p>
+    <br>
+    <div *ngIf="!checkAccess()">
+      <button type="button" (click)="addNewDemand()" class="my-button-save">Zapisz</button>
+    </div>
+    <br>
+    <br>
+    <p id="inputInfoin">{{buttonRequest}}</p>
+  </div>
+
+</div>

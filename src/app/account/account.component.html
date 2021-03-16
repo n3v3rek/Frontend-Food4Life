@@ -1,0 +1,136 @@
+<br>
+<br>
+<h1>Ustawienia konta</h1>
+<br>
+<br>
+
+<div id="userInfo">
+
+  <div id="accountInfo1">
+    <h2>Dane konta:</h2>
+    <br>
+    <br>
+    <p>Nazwa użytkownika: </p>
+    <br>
+    <p>E-Mail:            </p>
+    <br>
+    <p>Data rejestracji:  </p>
+    <br>
+    <p>Status konta:      </p>
+  </div>
+
+
+  <div id="accountInfo2">
+    <h2></h2>
+<br>
+    <br>
+    <br>
+    <br>
+    <p><b>{{user.username}}</b></p>
+    <br>
+    <p><b>{{user.email}}</b></p>
+    <br>
+    <p><b>{{user.creationDate}}</b></p>
+    <br>
+    <p><b>{{user.accountType}}</b></p>
+  </div>
+
+</div>
+
+
+<div id="settings">
+  <div id="accountSettings1_1">
+    <h2>Ustawienia:</h2>
+    <br>
+    <br>
+    <div id="accountSettings1">
+      <p>Nowa nazwa użytkownika: </p>
+      <br>
+      <p>Aktualne hasło:      </p>
+    </div>
+
+    <div id="accountSettings2">
+      <p><b><input type="text" [(ngModel)] ="usernameToBeSet"></b></p>
+      <br>
+      <p><b><input type="password" [(ngModel)]="passwordProvided1"></b></p>
+    </div>
+
+    <div id="buttonDiv1">
+      <br>
+      <button (click)="changeNickname()" id="submitButton1">Zmień nazwę</button>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div id="accountSettings3">
+    <p>Nowe hasło:            </p>
+    <br>
+    <p>Nowe hasło powtórzone:      </p>
+    <br>
+    <p>Aktualne hasło:      </p>
+  </div>
+
+  <div id="accountSettings4">
+    <p><b><input type="password" [(ngModel)]="passwordToBeSet1"></b></p>
+    <br>
+    <p><b><input type="password" [(ngModel)]="passwordToBeSet2"></b></p>
+    <br>
+    <p><b><input type="password" [(ngModel)]="passwordProvided2"></b></p>
+  </div>
+
+  <div>
+    <br>
+    <br>
+    <button id="submitButton2" (click)="changePassword()">Zmień hasło</button>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  {{requestResult1}}
+
+
+
+</div>
+
+<div id="accountArchiving1">
+  <h2>Archiwizacja konta:</h2>
+  <br>
+  <br>
+  <div id="accountArchivingInfo1">
+    <p>Aktualne hasło:      </p>
+    <br>
+    <p>Aktualne hasło:      </p>
+  </div>
+  <div id="accountArchivingInfo2">
+    <p><b><input type="password" [(ngModel)]="passwordProvided3"></b></p>
+    <br>
+    <p><b><input type="password" [(ngModel)]="passwordProvided4"></b></p>
+  </div>
+  <a href="{{pathRouting}}">
+  <div id="accountArchivingInfo3">
+    <br>
+    <button id="submitButton3" (click)="archivingAccount()">Achiwizacja konta</button>
+  </div>
+  </a>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  {{requestResult2}}
+
+
+</div>
+

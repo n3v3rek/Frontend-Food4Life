@@ -1,0 +1,194 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#showProductContent {
+  margin-left: 100px;
+}
+
+#selectButton {
+  background-color: black;
+  color: white;
+  border: black;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+#selectButton:hover {
+  background-color: #808590;
+}
+
+#selectorShowProduct {
+  margin-left: 66px;
+}
+
+
+.my-forms {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.forms-display {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 10px;
+}
+
+.my-button {
+  margin-left: 30px;
+  margin-top: 40px;
+  background: #333333;
+  color: white;
+  width: 160px;
+  height: 46px;
+  text-align: center;
+}
+
+.content-display {
+  background: black;
+  color: white;
+  padding: 30px;
+  height: 465px;
+  margin: 20px;
+}
+
+h1
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+#showRecipeContent
+{
+  margin: 0px 100px;
+}
+
+#selectButton
+{
+  background-color: black;
+  color: white;
+  border: black;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+#selectButton:hover
+{
+  background-color: #808590;
+}
+
+#data_1
+{
+  margin-left: 140px;
+}
+#data_2
+{
+  margin-left: 148px;
+}
+#data_3
+{
+  margin-left: 120px;
+}
+#data_4
+{
+  margin-left: 147px;
+}
+#data_5
+{
+  margin-left: 94px;
+}
+#data_6
+{
+  margin-left: 125px;
+}
+#data_7
+{
+  margin-left: 147px;
+}
+#data_8
+{
+  margin-left: 120px;
+}
+#data_9
+{
+  margin-left: 100px;
+}
+#data_10
+{
+  margin-left: 155px;
+}
+#selectorShowRecipe
+{
+  margin-left: 66px;
+}
+
+.btn-ulubione-blank {
+  background: url("src/assets/heart.png") no-repeat;
+}
+
+.btn-ulubione-added {
+  background: url("src/assets/heartblack.png") no-repeat;
+}
+
+.btn-nonvisible{
+  display: none;
+}
+
+.btn-visible{
+  float: right;
+  background: white;
+  width: 220px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  height: 42px;
+}
+
+.button-comment{
+  margin-top: 10px;
+  width: 220px;
+  font-weight: 200;
+  height: 42px;
+  font-size: 16px;
+  background: white;
+}
+
+.rigth-panel{
+  float: right;
+}
+
+.left-panel{
+  float: left;
+}
+
+
+.comment{
+  height: 100px;
+  border-radius: 15px;
+  margin: 10px 100px;
+  padding: 15px;
+  border: 5px solid black;
+}
+
+
+.form-control{
+  width: 80%;
+}
+
+.my-button{
+  width: 200px;
+  background: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  height: 42px;
+}
+
+.form-group{
+  margin-left: 100px;
+}

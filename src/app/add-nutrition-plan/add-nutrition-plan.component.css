@@ -1,0 +1,17 @@
+.pola-select{
+  margin-left: 40px;
+}
+
+.table-added-product{
+  text-align: center;
+  align-items: center;
+  margin: 30px 40px;
+}
+
+.btn-my{
+  background: black;
+  color: white;
+  width: 120px;
+  height: 32px;
+  font-size: 16px;
+}

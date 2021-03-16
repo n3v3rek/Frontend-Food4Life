@@ -1,0 +1,10 @@
+<a href="{{pathRouting}}" (click)="wyloguj()" class="link">
+  <div id="buttonLogin">
+    <p *ngIf="checkAccess()">
+      Logowanie
+    </p>
+    <p *ngIf="!checkAccess()">
+      Wyloguj
+    </p>
+  </div>
+</a>

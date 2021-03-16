@@ -1,0 +1,62 @@
+<div>
+  <div>
+    <h2>Dodawanie pozycji do planu żywienia: </h2>
+  </div>
+  <form [formGroup]="planForms" class="pola-select">
+    <div class="form-group" style="margin-top: 40px">
+      <select formControlName="dietaRodzaj" class="form-control" style="width: 900px">
+        <option name="dietaRodzaj" [ngValue]="null" disabled>Wybierz rodzaj diety</option>
+        <option *ngFor="let upr of diets" [ngValue]="upr.dietID"> {{"kcal: " + upr.recommendedKilocalories + " w: " + upr.recommendedCarbohydrates
+          + " b: " + upr.recommendedProteins + " f: " + upr.recommendedFats}}</option>
+      </select>
+    </div>
+    <div class="form-group" style="margin-top: 10px">
+      <select formControlName="dniaTygodnia" class="form-control" style="width: 900px">
+        <option name="dniaTygodnia" [ngValue]="null" disabled>Wybierz dzień tygodnia</option>
+        <option *ngFor="let upr of dniTygodnia" [ngValue]="upr"> {{upr}}</option>
+      </select>
+    </div>
+    <div class="form-group" style="margin-top: 10px">
+      <select formControlName="numerPosiolku" class="form-control" style="width: 900px">
+        <option name="numerPosiolku" [ngValue]="null" disabled>Wybierz numer posiłku</option>
+        <option *ngFor="let upr of liczbaPosiolkow" [ngValue]="upr"> {{upr}}</option>
+      </select>
+    </div>
+    <div class="form-group" style="margin-top: 10px">
+      <select formControlName="produktu" class="form-control" style="width: 900px">
+        <option name="produktu" [ngValue]="null" disabled>Wybierz produkt</option>
+        <option *ngFor="let upr of products " [ngValue]="upr.productID"> {{upr.name}}</option>
+      </select>
+    </div>
+    <div class="form-group" style="margin-top: 10px">
+      <select formControlName="przepis" class="form-control" style="width: 900px">
+        <option name="przepis" [ngValue]="null" disabled>Wybierz przepis</option>
+        <option *ngFor="let upr of recipes" [ngValue]="upr.recipeID"> {{upr.name}}</option>
+      </select>
+    </div>
+    <button type="button" (click)="findMealsForDiet()" class="btn-my">Dodaj</button>
+  </form>
+</div>
+
+<div>
+
+
+</div>
+
+<div class="table-added-product">
+  <div>
+    <h2>Dodane do planu żywienia: </h2>
+    <ag-grid-angular
+      style="width: 100%; height: 220px;"
+      class="ag-theme-alpine-dark"
+      [rowData]="datarow"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [headerHeight]="50"
+      (gridReady)="onGridReady($event)"
+      [rowHeight]="40"
+      [autoSizePadding]="true"
+    >
+    </ag-grid-angular>
+  </div>
+</div>

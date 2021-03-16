@@ -1,0 +1,38 @@
+h1
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+h2
+{
+  margin-left: 100px;
+}
+
+p
+{
+  margin-left: 100px;
+}
+
+ul
+{
+  margin-left: 100px;
+}
+
+#demandContentButton
+{
+  text-align: center;
+}
+
+#demandButton
+{
+  color: white;
+  background-color: black;
+  border: black;
+  padding: 10px;
+}
+
+#demandButton:hover
+{
+  background-color: #808590
+}

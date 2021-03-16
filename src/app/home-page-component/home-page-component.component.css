@@ -1,0 +1,24 @@
+#header
+{
+  font-size: 40px;
+  margin-right: 75px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p
+{
+  font-size: 20px;
+}
+h3
+{
+  text-align: center;
+}
+li{
+  font-size: 20px;
+  line-height: 1.4;
+}
+#homePageContent
+{
+  margin-left: 50px;
+}

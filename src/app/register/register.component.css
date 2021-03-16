@@ -1,0 +1,21 @@
+h1
+{
+  text-align: center;
+}
+
+#registerContent_template
+{
+  margin-left: 50px;
+  float: left;
+}
+
+#registerContent_User
+{
+  margin-left: 50px;
+  float: left;
+}
+
+p
+{
+  font-size: 18px;
+}

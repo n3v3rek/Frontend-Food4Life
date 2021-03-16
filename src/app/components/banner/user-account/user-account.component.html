@@ -1,0 +1,11 @@
+<div [ngClass]="{ 'visible' : checkAccess()}">
+  <a href="konto" class="link">
+    <div id="iconView" [ngClass]="{ 'visible' : checkAccess()}">
+      <i class="icon-user"></i>
+      <div id="iconDiv">
+        <p *ngIf="checkAccess()">Niezalogowany</p>
+        <p *ngIf="!checkAccess()">{{this.getUserName()}}</p>
+      </div>
+    </div>
+  </a>
+</div>

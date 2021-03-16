@@ -1,0 +1,60 @@
+<br>
+<br>
+<h1>Przegląd przepisów</h1>
+<br>
+<br>
+<div id="showRecipeContent">
+  <div *ngIf="loaded">
+    <form [formGroup]="recipeForm">
+      <div class="forms-display">
+        <div class="form-group" style="margin-top: 40px">
+          <select class="form-control" formControlName="recipe" style="width: 1200px">
+            <option name="recipe" [ngValue]="null" disabled>Wybierz przepis</option>
+            <option *ngFor="let product of recipes" [ngValue]="product.recipeID"> {{product.name}}</option>
+          </select>
+        </div>
+        <button type="button" (click)="onSelected()" class="my-button">Zatwierdź</button>
+      </div>
+    </form>
+  </div>
+
+  <div *ngIf="isloaded">
+    <div class="content-display">
+      <h2>Dane przepisu:</h2>
+      <br>
+      <div class="rigth-panel">
+      <div [hidden]="checkAccess()" >
+      <button [ngClass]="{ 'btn-ulubione-added' : this.ulubione ,'btn-ulubione-blank' : !this.ulubione , 'btn-nonvisible' : !this.visible, 'btn-visible' : this.visible}"
+              (click)="addToFavorite()"> <p *ngIf="!this.ulubione">Dodaj do Ulubione</p> <p *ngIf="this.ulubione">Usuń z Ulubionych</p></button>
+      </div>
+      <br/>
+      </div>
+      <div class="left-panel">
+      <p>Nazwa:<b id="data_1">{{selectedProduct.name}}</b></p>
+      <p>Waga:<b id="data_2">{{selectedProduct.weight}} g</b></p>
+      <p>Kilokalorie:<b id="data_3">{{selectedProduct.kilocalorie}} kcal</b></p>
+      <p>Białka:<b id="data_4">{{selectedProduct.protein}} g</b></p>
+      <p>Węglowodany:<b id="data_5">{{selectedProduct.carbohydrates}} g</b></p>
+      <p>Tłuszcze:<b id="data_6">{{selectedProduct.fats}} g</b></p>
+      <p>Treść:<b id="data_7">{{selectedProduct.contentOfRecipe}}</b></p>
+      <br>
+      <p>Polubienia:<b id="data_8">{{selectedProduct.likesCounter}}</b></p>
+      <p>Data dodania:<b id="data_9">{{selectedProduct.creationDate}}</b></p>
+      <p>Opis:<b id="data_10">{{selectedProduct.description}}</b></p>
+      <br>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleTextarea">Dodaj Komentarz</label>
+      <textarea class="form-control" [(ngModel)]="coms.contentOfComment" id="exampleTextarea" rows="10"></textarea>
+    </div>
+    <button (click)="createComment()" class="my-button">
+      Dodaj
+    </button>
+    <div *ngFor="let com of comments" class="comment">
+      {{com.contentOfComment}}
+    </div>
+
+  </div>
+</div>
+

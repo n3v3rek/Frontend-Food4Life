@@ -1,0 +1,44 @@
+h1
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+#submitButton{
+  margin-left: 100px;
+  color: white;
+  background-color: black;
+  border: black;
+  padding: 10px;
+}
+
+#submitButton:hover{
+  background-color: #808590;
+}
+
+#addProductDiv{
+  margin-left: 100px;
+}
+
+#inputInfo{
+  float: left;
+  line-height: 1.09;
+}
+
+#inputData{
+  float: left;
+  margin-left: 50px;
+  line-height: 1.27;
+}
+
+#buttonDiv{
+  clear: both;
+}
+
+p{
+  font-weight: bold;
+}
+
+h2{
+  font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<div class="my-forms">
+  <br>
+  <br>
+  <h1>Sprawdzanie produktów</h1>
+  <br>
+  <br>
+  <div id="showProductContent">
+    <div *ngIf="loaded">
+      <form [formGroup]="productForm">
+        <div class="forms-display">
+          <div class="form-group" style="margin-top: 40px">
+            <select class="form-control" formControlName="product" style="width: 1200px">
+              <option name="product" [ngValue]="null"  disabled>Wybierz produkt</option>
+              <option *ngFor="let product of products" [ngValue]="product.productID"> {{product.name}}</option>
+            </select>
+          </div>
+          <button type="button" (click)="onSelected()" class="my-button">Zatwierdź</button>
+        </div>
+      </form>
+    </div>
+    <div *ngIf="isloaded">
+      <div class="content-display">
+        <h2>Dane produktu:</h2>
+        <button type="button" class="button-product" (click)="removeProduct()">
+          Usuń
+        </button>
+
+        <button type="button" class="button-product" (click)="addProduct()">
+          Dodaj
+        </button>
+        <br>
+        <br>
+        <p>Nazwa:<b> {{selectedProduct.name}}</b></p>
+        <p>Waga:<b> {{selectedProduct.weight}} g</b></p>
+        <p>Kilokalorie:<b>{{selectedProduct.kilocalorie}} kcal</b></p>
+        <p>Białka:<b>{{selectedProduct.protein}} g</b></p>
+        <p>Węglowodany:<b>{{selectedProduct.carbohydrates}} g</b></p>
+        <p>Tłuszcze:<b>{{selectedProduct.fats}} g</b></p>
+        <p>Tłuszcze:<b>{{selectedProduct.fats}} g</b></p>
+        <p>Alergeny:<b>{{selectedProduct.allergens}}</b></p>
+        <p>Opis:<b>{{selectedProduct.description}}</b></p>
+      </div>
+    </div>
+  </div>
+</div>

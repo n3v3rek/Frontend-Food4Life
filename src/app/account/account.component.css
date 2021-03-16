@@ -1,0 +1,114 @@
+h1
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+h2
+{
+  font-weight: bold;
+}
+
+#userInfo{
+float: left;
+}
+#settings{
+  float: left;
+  margin-left: 70px;
+}
+
+#accountInfo1{
+  float: left;
+  margin-left: 50px;
+  line-height: 1.35;
+}
+
+#accountInfo2{
+  margin-left: 50px;
+  float: left;
+  line-height: 1.3;
+}
+
+#accountSettings1{
+  float: left;
+}
+
+#accountSettings2{
+  margin-left: 50px;
+  float: left;
+  line-height: 1.2;
+}
+#accountSettings3{
+  float: left;
+}
+
+#accountSettings4{
+  margin-left: 58px;
+  float: left;
+  line-height: 1.25;
+}
+
+#submitDiv{
+  clear: both;
+  float: top;
+}
+
+#submitButton1{
+  margin-left: 70px;
+  color: white;
+  background-color: black;
+  border: black;
+  padding: 10px;
+}
+
+#submitButton1:hover{
+  background-color: #808590;
+}
+
+#submitButton2{
+  margin-left: 70px;
+  color: white;
+  background-color: black;
+  border: black;
+  padding: 10px;
+}
+
+#submitButton2:hover{
+  background-color: #808590;
+}
+
+#accountArchiving1{
+  margin-left: 70px;
+  float: left;
+}
+
+#buttonDiv1{
+  float: left;
+}
+
+#accountArchivingInfo1{
+  float: left;
+  line-height: 1.4;
+}
+
+#accountArchivingInfo2{
+  float: left;
+  margin-left: 50px;
+  line-height: 1.2;
+}
+
+#accountArchivingInfo3{
+  float: left;
+  margin-left: 70px;
+}
+
+#submitButton3{
+  color: white;
+  background-color: black;
+  border: black;
+  padding: 10px;
+}
+
+#submitButton3:hover{
+  background-color: #808590;
+}

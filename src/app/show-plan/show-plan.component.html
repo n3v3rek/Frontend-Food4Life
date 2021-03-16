@@ -1,0 +1,32 @@
+<br>
+<br>
+<h1>Przegląd planów dla diet</h1>
+<br>
+<br>
+<div id="showDietContent">
+    <form [formGroup]="dietForm">
+      <div class="forms-display">
+        <div class="form-group" style="margin-top: 40px">
+          <select class="form-control" formControlName="diet" style="width: 1200px">
+            <option name="diet" [ngValue]="null" disabled>Wybierz diete</option>
+            <option *ngFor="let diet of diets" [ngValue]="diet.dietID"> {{"kcal: " + diet.recommendedKilocalories + " w: " + diet.recommendedCarbohydrates
+            + " b: " + diet.recommendedProteins + " f: " + diet.recommendedFats}}</option>
+          </select>
+        </div>
+        <button type="button" (click)="onSelected()" class="my-button">Zatwierdź</button>
+      </div>
+
+    </form>
+</div>
+<ag-grid-angular
+  style="width: 100%; height: 360px;"
+  class="ag-theme-alpine-dark"
+  [rowData]="datarow"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [headerHeight]="50"
+  (gridReady)="onGridReady($event)"
+  [rowHeight]="40"
+  [autoSizePadding]="true"
+>
+</ag-grid-angular>

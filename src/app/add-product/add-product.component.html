@@ -1,0 +1,53 @@
+<br>
+<br>
+<h1>Dodawanie produktu</h1>
+<br>
+<div id="addProductDiv">
+  <br>
+  <h2>Dodawanie nowego produktu:</h2>
+  <br>
+  <div id="inputInfo">
+    <p>*Nazwa:</p>
+    <br>
+    <p>*Waga: [g]:</p>
+    <br>
+    <p>*Kilokalorie [kcal]:</p>
+    <br>
+    <p>*Białka [g]:</p>
+    <br>
+    <p>*Węglowodany [g]:</p>
+    <br>
+    <p>*Tłuszcze [g]:</p>
+    <br>
+    <p>Opis:</p>
+    <br>
+    <p>Alergeny:</p>
+
+  </div>
+
+  <div id="inputData">
+
+    <input type="text"  [(ngModel)]="product.name"><br>
+    <br>
+    <input type="text"  [(ngModel)]="product.weight"><br>
+    <br>
+    <input type="text"  [(ngModel)]="product.kilocalorie"><br>
+    <br>
+    <input type="text"  [(ngModel)]="product.protein"><br>
+    <br>
+    <input type="text"  [(ngModel)]="product.carbohydrates"><br>
+    <br>
+    <input type="text"  [(ngModel)]="product.fats"><br>
+    <br>
+    <input type="text"  [(ngModel)]="product.description"><br>
+    <br>
+    <input type="text"  [(ngModel)]="product.allergens"><br>
+  </div>
+ <div id="buttonDiv">
+  <br>
+  <button id="submitButton" (click)="addNewProduct()">Dodaj nowy produkt</button>
+  <br>
+  <br>
+  <p>Wartości oznaczone * muszą zostać podane.</p>
+ </div>
+</div>

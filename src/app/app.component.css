@@ -1,0 +1,30 @@
+body
+{
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  margin: -8px;
+  width: auto;
+  height: auto;
+  min-width: 1910px;
+  background-image: url("../app/food_foto.jpeg");
+}
+
+#container{
+  opacity: 0.95;
+  margin: 15px;
+  width: auto;
+  min-height: 758px;
+  min-width: 1900px;
+}
+
+#content{
+  float: left;
+  height: auto;
+  margin-left: 15px;
+  width: 1655px;
+  min-height: 758px;
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+

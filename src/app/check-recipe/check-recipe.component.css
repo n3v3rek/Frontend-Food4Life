@@ -1,0 +1,138 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#showProductContent {
+  margin-left: 100px;
+}
+
+#selectButton {
+  background-color: black;
+  color: white;
+  border: black;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+#selectButton:hover {
+  background-color: #808590;
+}
+
+#selectorShowProduct {
+  margin-left: 66px;
+}
+
+
+.my-forms {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.forms-display {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 10px;
+}
+
+.my-button {
+  margin-left: 30px;
+  margin-top: 40px;
+  background: #333333;
+  color: white;
+  width: 160px;
+  height: 46px;
+  text-align: center;
+}
+
+.content-display {
+  background: black;
+  color: white;
+  padding: 30px;
+  height: 465px;
+  margin: 20px;
+}
+
+h1
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+#checkRecipeContent
+{
+  margin: 0px 100px;
+}
+
+#selectButton
+{
+  background-color: black;
+  color: white;
+  border: black;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+#selectButton:hover
+{
+  background-color: #808590;
+}
+
+#data_1
+{
+  margin-left: 140px;
+}
+#data_2
+{
+  margin-left: 150px;
+}
+#data_3
+{
+  margin-left: 113px;
+}
+#data_4
+{
+  margin-left: 143px;
+}
+#data_5
+{
+  margin-left: 86px;
+}
+#data_6
+{
+  margin-left: 125px;
+}
+#data_7
+{
+  margin-left: 147px;
+}
+#data_8
+{
+  margin-left: 113px;
+}
+#data_9
+{
+  margin-left: 92px;
+}
+#data_10
+{
+  margin-left: 155px;
+}
+#selectorShowRecipe
+{
+  margin-left: 66px;
+}
+
+
+.button-product{
+  float: right;
+  margin: 5px;
+  width: 120px;
+  color: black;
+  font-size: 16px;
+  background: white;
+}
