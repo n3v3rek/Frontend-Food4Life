@@ -1,53 +1,47 @@
-<br>
-<br>
 <h1>Dodawanie produktu</h1>
-<br>
-<div id="addProductDiv">
-  <br>
-  <h2>Dodawanie nowego produktu:</h2>
-  <br>
-  <div id="inputInfo">
-    <p>*Nazwa:</p>
-    <br>
-    <p>*Waga: [g]:</p>
-    <br>
-    <p>*Kilokalorie [kcal]:</p>
-    <br>
-    <p>*Białka [g]:</p>
-    <br>
-    <p>*Węglowodany [g]:</p>
-    <br>
-    <p>*Tłuszcze [g]:</p>
-    <br>
-    <p>Opis:</p>
-    <br>
-    <p>Alergeny:</p>
 
-  </div>
+<h2>Dodawanie nowego produktu:</h2>
 
-  <div id="inputData">
 
-    <input type="text"  [(ngModel)]="product.name"><br>
-    <br>
+<div id="add-product-basic">
+  <form>
+ <fieldset>
+   <legend>Podstawowe informacje:</legend>
+   <label class="form-name"><span class="form-name">Nazwa:</span><br>
+     <input type="text"  [(ngModel)]="product.name"><br>
+   </label><br>
+   <label class="form-name">Waga: [g]:<br>
     <input type="text"  [(ngModel)]="product.weight"><br>
-    <br>
+   </label><br>
+   <label class="form-name">Kilokalorie [kcal]:<br>
     <input type="text"  [(ngModel)]="product.kilocalorie"><br>
-    <br>
-    <input type="text"  [(ngModel)]="product.protein"><br>
-    <br>
-    <input type="text"  [(ngModel)]="product.carbohydrates"><br>
-    <br>
-    <input type="text"  [(ngModel)]="product.fats"><br>
-    <br>
-    <input type="text"  [(ngModel)]="product.description"><br>
-    <br>
-    <input type="text"  [(ngModel)]="product.allergens"><br>
-  </div>
- <div id="buttonDiv">
-  <br>
-  <button id="submitButton" (click)="addNewProduct()">Dodaj nowy produkt</button>
-  <br>
-  <br>
-  <p>Wartości oznaczone * muszą zostać podane.</p>
+   </label><br>
+   <label class="form-name">Białka [g]:<br>
+     <input type="text"  [(ngModel)]="product.protein"><br>
+   </label><br>
+   <label class="form-name">Węglowodany [g]:<br>
+     <input type="text"  [(ngModel)]="product.carbohydrates"><br>
+   </label><br>
+   <label class="form-name">Tłuszcze [g]:<br>
+     <input type="text"  [(ngModel)]="product.fats"><br>
+   </label><br>
+ </fieldset>
+  </form>
  </div>
+
+<div id="add-product-extended">
+    <fieldset>
+      <legend>Dodatkowe informacje:</legend>
+      <label class="form-name">Opis:<br>
+    <input type="text" id="description" [(ngModel)]="product.description"><br>
+      </label><br>
+      <label class="form-name">Alergeny:<br>
+    <input type="text"  [(ngModel)]="product.allergens"><br>
+      </label><br>
+    </fieldset>
 </div>
+
+<div id="button">
+  <button id="submit-button" (click)="addNewProduct()">Dodaj nowy produkt</button>
+</div>
+

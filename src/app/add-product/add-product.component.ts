@@ -14,14 +14,13 @@ export class AddProductComponent implements OnInit {
   product: Product;
   user: User;
 
-  constructor(private productService: ProductService) {
-  }
+  constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
     this.product = new Product();
     this.user = JSON.parse(sessionStorage.getItem('user'));
   }
-
+/* Przerzucić elementy tworzone na backend, zeby zmniejszyc JSON'a */
   addNewProduct() {
     this.product.creationDate = new Date();
     this.product.status = 'TO_BE_CHECKED';
