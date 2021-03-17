@@ -1,57 +1,58 @@
-<br>
-<br>
 <h1>Dodawanie pomiaru</h1>
-<br>
-<div id="addMeasurementDiv">
-  <br>
-  <h2>Dodawanie nowego pomiaru:</h2>
-  <br>
-  <div id="inputInfo">
-    <p>*Waga [kg]:</p>
-    <br>
-    <p>*Wzrost [cm]:</p>
-    <br>
-    <p>*Biceps [cm]:</p>
-    <br>
-    <p>*Łydka [cm]:</p>
-    <br>
-    <p>*Klatka [cm]:</p>
-    <br>
-    <p>*Biodra [cm]:</p>
-    <br>
-    <p>*Udo [cm]:</p>
-    <br>
-    <p>*Talia [cm]:</p>
-    <br>
-    <p>Opis:</p>
 
-  </div>
+<h2>Dodawanie nowego pomiaru:</h2>
 
-  <div id="inputData">
+<div id="add-measurement-basic">
+  <form>
+    <fieldset>
+      <legend>Podstawowe informacje:</legend>
+        <label class="form-name">Waga [kg]:<br>
+        <input type="text"  [(ngModel)]="measurement.weight"><br>
+        </label><br>
+        <label class="form-name">Wzrost [cm]:<br>
+        <input type="text"  [(ngModel)]="measurement.growth"><br>
+        </label><br>
+    </fieldset>
+  </form>
+</div>
 
-    <input type="text"  [(ngModel)]="measurement.weight"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.growth"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.bicepsCircumference"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.calfCircumference"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.chestCircumference"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.hipSize"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.thighCircumference"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.waistSize"><br>
-    <br>
-    <input type="text"  [(ngModel)]="measurement.description"><br>
-  </div>
-  <div id="buttonDiv">
-    <br>
-    <button id="submitButton" (click)="addNewMeasurement()">Dodaj nowy pomiar</button>
-    <br>
-    <br>
-    <p>Wartości oznaczone * muszą zostać podane.</p>
-  </div>
+<div id="add-measurement-basic-measurements">
+  <form>
+    <fieldset>
+      <legend>Pomiary:</legend>
+        <label class="form-name">Biceps [cm]:<br>
+          <input type="text"  [(ngModel)]="measurement.bicepsCircumference"><br>
+        </label><br>
+        <label class="form-name">Łydka [cm]:<br>
+          <input type="text"  [(ngModel)]="measurement.calfCircumference"><br>
+        </label><br>
+        <label class="form-name">Klatka [cm]:<br>
+         <input type="text"  [(ngModel)]="measurement.chestCircumference"><br>
+        </label><br>
+        <label class="form-name">Biodra [cm]:<br>
+          <input type="text"  [(ngModel)]="measurement.hipSize"><br>
+        </label><br>
+        <label class="form-name">Udo [cm]:<br>
+          <input type="text"  [(ngModel)]="measurement.thighCircumference"><br>
+        </label><br>
+        <label class="form-name">Talia [cm]:<br>
+          <input type="text"  [(ngModel)]="measurement.waistSize"><br>
+        </label><br>
+    </fieldset>
+  </form>
+</div>
+
+<div id="add-measurement-extended">
+  <form>
+    <fieldset>
+      <legend>Dodatkowe informacje:</legend>
+      <label class="form-name">Opis:<br>
+        <textarea type="text" class="description" [(ngModel)]="measurement.description"></textarea><br>
+      </label><br>
+    </fieldset>
+  </form>
+</div>
+
+<div id="button">
+  <button id="submit-button" (click)="addNewMeasurement()">Dodaj nowy przepis</button>
 </div>
