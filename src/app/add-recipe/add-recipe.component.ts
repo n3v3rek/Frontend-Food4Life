@@ -20,6 +20,7 @@ export class AddRecipeComponent implements OnInit {
     this.user = JSON.parse(sessionStorage.getItem('user'));
   }
 
+  /* Przerzucić elementy tworzone na backend, zeby zmniejszyc JSON'a */
   addNewRecipe() {
     this.recipe.creationDate = new Date();
     this.recipe.likesCounter = 0;

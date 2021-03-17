@@ -2,43 +2,91 @@ h1
 {
   text-align: center;
   font-weight: bold;
-}
-
-#submitButton{
-  margin-left: 100px;
-  color: white;
-  background-color: black;
-  border: black;
-  padding: 10px;
-}
-
-#submitButton:hover{
-  background-color: #808590;
-}
-
-#addRecipeDiv{
-  margin-left: 100px;
-}
-
-#inputInfo{
-  float: left;
-  line-height: 1.09;
-}
-
-#inputData{
-  line-height: 1.27;
-  float: left;
-  margin-left: 50px;
-}
-
-#buttonDiv{
-  clear: both;
-}
-
-p{
-  font-weight: bold;
+  margin-top: 40px;
 }
 
 h2{
   font-weight: bold;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
+
+#add-recipe-basic{
+  float: left;
+  margin-left: 100px;
+}
+#add-recipe-basic:hover{
+  background-color: #999999;
+}
+
+#add-recipe-basic-macro{
+  float: left;
+  margin-left: 100px;
+}
+#add-recipe-basic-macro:hover{
+  background-color: #999999;
+}
+
+#add-recipe-extended{
+  float: left;
+  margin-left: 100px;
+}
+#add-recipe-extended:hover{
+  background-color: #999999;
+}
+
+#button {
+  clear: both;
+}
+
+legend {
+  background-color: #333333;
+  color: white;
+  width: auto;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.form-name{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+#submit-button{
+  color: white;
+  background-color: black;
+  border-color: black;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+#submit-button:hover{
+  background-color: #808590;
+  border-color: #808590;
+}
+label{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input,textarea{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  background-color: white;
+  width: 240px;
+  border-width: 2px;
+  border-top-color: #333333;
+  border-left-color: #333333;
+}
+
+.description {
+  height: 140px;
+  resize: none;
+}
+
+
+
