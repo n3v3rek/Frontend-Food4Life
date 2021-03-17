@@ -20,6 +20,7 @@ export class AddMeasurementComponent implements OnInit {
     this.user = JSON.parse(sessionStorage.getItem('user'));
   }
 
+  /* Przerzucić elementy tworzone na backend, zeby zmniejszyc JSON'a */
   addNewMeasurement() {
     this.measurement.creationDate = new Date();
     this.measurementService.createMeasurement(this.measurement,this.user.userID).subscribe(
