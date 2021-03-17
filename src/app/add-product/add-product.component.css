@@ -64,11 +64,15 @@ label{
   margin-right: 20px;
 }
 
-input{
+input,textarea{
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 4px;
   background-color: white;
+  width: 240px;
+  border-width: 2px;
+  border-top-color: #333333;
+  border-left-color: #333333;
 }
 
 #description {

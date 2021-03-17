@@ -2,7 +2,6 @@
 
 <h2>Dodawanie nowego produktu:</h2>
 
-
 <div id="add-product-basic">
   <form>
  <fieldset>
@@ -27,13 +26,13 @@
    </label><br>
  </fieldset>
   </form>
- </div>
+</div>
 
 <div id="add-product-extended">
     <fieldset>
       <legend>Dodatkowe informacje:</legend>
       <label class="form-name">Opis:<br>
-    <input type="text" id="description" [(ngModel)]="product.description"><br>
+        <textarea type="text" id="description" [(ngModel)]="product.description"></textarea><br>
       </label><br>
       <label class="form-name">Alergeny:<br>
     <input type="text"  [(ngModel)]="product.allergens"><br>
